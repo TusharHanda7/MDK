@@ -1,0 +1,131 @@
+{
+	"Controls": [
+		{
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCSite",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Site",
+							"PlaceHolder": "Site",
+							"KeyboardType": "Default",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCPlateCode",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Plate Code",
+							"PlaceHolder": "Plate Code",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCPlateNum",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Plate Num",
+							"PlaceHolder": "Plate Num",
+							"KeyboardType": "Number",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCMobile",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Mobile",
+							"PlaceHolder": "Mobile",
+							"KeyboardType": "Phone",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCModel",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Model",
+							"PlaceHolder": "Model",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCName",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Name",
+							"PlaceHolder": "Name",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "2024-05-24T18:58:19",
+							"_Type": "Control.Type.FormCell.DatePicker",
+							"_Name": "FCDate",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Date",
+							"IsEditable": false,
+							"Mode": "Date"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CreateWash",
+	"Caption": "CreateWash",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Save",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/carcarenew/Actions/ODataCreateHeader.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/carcarenew/Actions/CloseModalPage_Cancel.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

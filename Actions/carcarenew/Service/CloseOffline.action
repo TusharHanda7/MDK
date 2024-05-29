@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/carcarenew/Services/carcarenew.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/carcarenew/Actions/carcarenew/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/carcarenew/Actions/carcarenew/Service/CloseOfflineFailureMessage.action"
+}

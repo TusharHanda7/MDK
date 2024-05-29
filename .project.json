@@ -1,0 +1,58 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "List Detail",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us10-001.hana.ondemand.com",
+		"Organization": "e8a09ce4-3971-44fb-9482-accfea70d4fa",
+		"Space": "9ba0589b-508e-49d0-9e77-d38cf4261ac5",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
+			},
+			"Destination": [
+				{
+					"CF": "carcarenew",
+					"MDK": "carcarenew",
+					"URL": ""
+				}
+			],
+			"Name": "ns.carcarenew",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true,
+			"URL": "https://72973202trial-dev-nscarcarenew-approuter.cfapps.us10-001.hana.ondemand.com/nscarcarenew"
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/e8a09ce4-3971-44fb-9482-accfea70d4fa/space/9ba0589b-508e-49d0-9e77-d38cf4261ac5",
+		"AppId": "carcarenew",
+		"Destination": [
+			"carcarenew"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=carcarenew&ClientId=1f6ef9ac-d448-4b44-9578-ff21ef50810d&ServerUrl=https://72973202trial-dev-carcarenew.cfapps.us10-001.hana.ondemand.com&SapCloudPlatformEndpoint=https://72973202trial-dev-carcarenew.cfapps.us10-001.hana.ondemand.com&AuthorizationEndpointUrl=https://72973202trial-dev-carcarenew.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://72973202trial-dev-carcarenew.cfapps.us10-001.hana.ondemand.com&TokenUrl=https://72973202trial-dev-carcarenew.cfapps.us10-001.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}

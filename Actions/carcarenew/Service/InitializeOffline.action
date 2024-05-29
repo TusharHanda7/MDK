@@ -1,0 +1,23 @@
+{
+    "Service": "/carcarenew/Services/carcarenew.service",
+    "DefiningRequests": [{
+            "Name": "ZC_OFF_CARCARE",
+            "Query": "ZC_OFF_CARCARE"
+        },
+        {
+            "Name": "ZC_OFF_CARITEM",
+            "Query": "ZC_OFF_CARITEM"
+        },
+        {
+            "Name": "ZCDS_OFF_MATERIAL",
+            "Query": "ZCDS_OFF_MATERIAL"
+        }
+    ],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/carcarenew/Actions/carcarenew/Service/InitializeOfflineFailureMessage.action"
+}

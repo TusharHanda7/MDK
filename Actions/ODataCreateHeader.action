@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"ActionResult": {
+		"_Name": "ODataCreateHeader"
+	},
+	"OnFailure": "/carcarenew/Actions/CreateHeaderFailure.action",
+	"OnSuccess": "/carcarenew/Actions/navToDisplayWash.action",
+	"Target": {
+		"Service": "/carcarenew/Services/carcarenew.service",
+		"EntitySet": "ZC_OFF_CARCARE"
+	},
+	"Properties": {
+		"Site": "#Page:CreateWash/#Control:FCSite/#Value",
+		"PlateNum": "#Page:CreateWash/#Control:FCPlateNum/#Value",
+		"PlateCode": "#Page:CreateWash/#Control:FCPlateCode/#Value",
+		"MobileNum": "#Page:CreateWash/#Control:FCMobile/#Value",
+		"CreatedOn": "#Page:CreateWash/#Control:FCDate/#Value",
+		"FirstName": "#Page:CreateWash/#Control:FCSite/#Value"
+	}
+}

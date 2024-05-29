@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"ActionResult": {
+		"_Name": "navToCreateItem"
+	},
+	"PageToOpen": "/carcarenew/Pages/CreateItem.page",
+	"ModalPage": false,
+	"Transition": {
+		"Curve": "EaseIn",
+		"Name": "None"
+	}
+}

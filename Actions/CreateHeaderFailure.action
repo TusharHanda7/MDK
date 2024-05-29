@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "CreateHeaderFailure"
+	},
+	"Message": "Create Header Failed",
+	"Title": "Create Header",
+	"OKCaption": "OK"
+}

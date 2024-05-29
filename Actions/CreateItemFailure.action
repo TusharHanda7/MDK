@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "CreateItemFailure"
+	},
+	"Message": "Creation of Item failed",
+	"Title": "Create Item",
+	"OKCaption": "OK"
+}

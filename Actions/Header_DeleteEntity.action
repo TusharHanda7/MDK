@@ -1,0 +1,13 @@
+{
+	"_Type": "Action.Type.ODataService.DeleteEntity",
+	"ActionResult": {
+		"_Name": "Header_DeleteEntity"
+	},
+	"OnFailure": "/carcarenew/Actions/DeleteHeaderEntityFailureMessage.action",
+	"OnSuccess": "/carcarenew/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"Service": "/carcarenew/Services/carcarenew.service",
+		"EntitySet": "ZC_OFF_CARCARE",
+		"ReadLink": "{@odata.readLink}"
+	}
+}

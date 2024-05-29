@@ -1,0 +1,9 @@
+{
+	"_Type": "Action.Type.Message",
+	"ActionResult": {
+		"_Name": "DeleteHeaderEntityFailureMessage"
+	},
+	"Message": "Delete entity failure",
+	"Title": "Delete Header",
+	"OKCaption": "OK"
+}

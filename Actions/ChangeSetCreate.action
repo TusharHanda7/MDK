@@ -1,0 +1,15 @@
+{
+	"_Type": "Action.Type.ODataService.ChangeSet",
+	"ActionResult": {
+		"_Name": "ChangeSetCreate"
+	},
+	"OnFailure": "/carcarenew/Actions/CreateHeaderFailure.action",
+	"OnSuccess": "/carcarenew/Actions/CloseModalPage_Complete.action",
+	"Target": {
+		"Service": "/carcarenew/Services/carcarenew.service"
+	},
+	"Actions": [
+		"/carcarenew/Actions/ODataCreateHeader.action",
+		"/carcarenew/Actions/ODataCreateItem.action"
+	]
+}
