@@ -18,7 +18,7 @@
 					},
 					"Controls": [
 						{
-							"Value": "000000",
+							"Value": "/carcarenew/Rules/Item_number.js",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"_Name": "FCCItem",
 							"IsVisible": true,
@@ -26,17 +26,7 @@
 							"Caption": "Item",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true,
-							"IsEditable": true
-						},
-						{
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FCCMaterial",
-							"IsVisible": true,
-							"Separator": true,
-							"Caption": "Material",
-							"PlaceHolder": "00000",
-							"Enabled": true,
-							"IsEditable": true
+							"IsEditable": false
 						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
@@ -61,11 +51,81 @@
 							"PickerItems": {
 								"Target": {
 									"Service": "/carcarenew/Services/carcarenew.service",
-									"EntitySet" : "ZCDS_OFF_MATERIAL"
+									"EntitySet": "ZCDS_OFF_MATERIAL"
 								},
 								"DisplayValue": "{Material} {MaterialName} {Price}",
 								"ReturnValue": "{Material}"
 							}
+						},
+						{
+							"Value": "/carcarenew/Rules/MaterialPrice.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"DataSubscriptions": [
+								"ZCDS_OFF_MATERIAL"
+							],
+							"_Name": "FCCPrice",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Price",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "INR",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCCurrency",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Currency",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"Value": "1",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCQuantity",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Quantity",
+							"PlaceHolder": "1",
+							"Enabled": true,
+							"IsEditable": true
+						},
+						{
+							"Value": "EA",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCCUnit",
+							"IsVisible": true,
+							"Separator": true,
+							"Caption": "Unit",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": false
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "FCCList2",
+							"IsVisible": true,
+							"Separator": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": true,
+							"Caption": "Choose Material",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"IsEditable": true,
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": "/carcarenew/Rules/MaterialF4.js"
 						}
 					],
 					"Visible": true,

@@ -4,7 +4,7 @@
 		"_Name": "navToCreateItem"
 	},
 	"PageToOpen": "/carcarenew/Pages/CreateItem.page",
-	"ModalPage": false,
+	"ModalPage": true,
 	"Transition": {
 		"Curve": "EaseIn",
 		"Name": "None"

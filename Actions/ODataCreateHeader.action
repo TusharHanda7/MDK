@@ -15,6 +15,6 @@
 		"PlateCode": "#Page:CreateWash/#Control:FCPlateCode/#Value",
 		"MobileNum": "#Page:CreateWash/#Control:FCMobile/#Value",
 		"CreatedOn": "#Page:CreateWash/#Control:FCDate/#Value",
-		"FirstName": "#Page:CreateWash/#Control:FCSite/#Value"
+		"FirstName": "#Page:CreateWash/#Control:FCName/#Value"
 	}
 }

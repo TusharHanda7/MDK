@@ -1,0 +1,21 @@
+{
+	"_Type": "Action.Type.ODataService.CreateRelatedEntity",
+	"ActionResult": {
+		"_Name": "ODataCreateItemTable"
+	},
+	"Target": {
+		"Service": "/carcarenew/Services/carcarenew.service",
+		"EntitySet": "ZC_OFF_CARITEM"
+	},
+	"ParentLink": {
+		"Target": {
+			"EntitySet": "ZC_OFF_CARCARE",
+			"ReadLink": "{@odata.readLink}"
+		},
+		"Property": "_Item"
+	},
+	"Properties": {
+		"ItemNo": "000010",
+		"Material": ""
+	}
+}

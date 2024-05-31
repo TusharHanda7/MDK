@@ -12,11 +12,13 @@ export default function MaterialF4(clientAPI) {
                 DisplayValue: Material + ': ' + MaterialName + ': ' + Price ,ReturnValue: Material
             }));
           //clientAPI.getPageProxy().getControls()[0].getControl("FCCList").setPickerItems(data);
-          clientAPI.getPageProxy().getControl('SectionFormCell1').setPickerItems(data);
-            //clientAPI.getPageProxy().getControls()[0].getControl("MListpicker").setValue(["I47"]);
-          //  clientAPI.getPageProxy().getControls()[0].getControl("MListpicker").reset();  
- 
-         
+          var a = clientAPI.getPageProxy();
+          var b = a.getControl('SectionedTable0');
+          var c = b.getControl('FCCList2');
+          c.setPickerItems(data);
+          // var d = b.getControl('FCCPrice');
+          // b.setValue('10');
+          // return data; 
         }
     });
  

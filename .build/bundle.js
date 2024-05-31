@@ -83,6 +83,8 @@ let carcarenew_actions_navtoheaderdetail_action = __webpack_require__(/*! ./carc
 let carcarenew_actions_navtoselectwash_action = __webpack_require__(/*! ./carcarenew/Actions/navToSelectWash.action */ "./build.definitions/carcarenew/Actions/navToSelectWash.action")
 let carcarenew_actions_odatacreateheader_action = __webpack_require__(/*! ./carcarenew/Actions/ODataCreateHeader.action */ "./build.definitions/carcarenew/Actions/ODataCreateHeader.action")
 let carcarenew_actions_odatacreateitem_action = __webpack_require__(/*! ./carcarenew/Actions/ODataCreateItem.action */ "./build.definitions/carcarenew/Actions/ODataCreateItem.action")
+let carcarenew_actions_odatacreateitemtable_action = __webpack_require__(/*! ./carcarenew/Actions/ODataCreateItemTable.action */ "./build.definitions/carcarenew/Actions/ODataCreateItemTable.action")
+let carcarenew_actions_odatareadheader_action = __webpack_require__(/*! ./carcarenew/Actions/ODataReadHeader.action */ "./build.definitions/carcarenew/Actions/ODataReadHeader.action")
 let carcarenew_globals_application_appdefinition_version_global = __webpack_require__(/*! ./carcarenew/Globals/Application/AppDefinition_Version.global */ "./build.definitions/carcarenew/Globals/Application/AppDefinition_Version.global")
 let carcarenew_globals_application_applicationname_global = __webpack_require__(/*! ./carcarenew/Globals/Application/ApplicationName.global */ "./build.definitions/carcarenew/Globals/Application/ApplicationName.global")
 let carcarenew_globals_application_supportemail_global = __webpack_require__(/*! ./carcarenew/Globals/Application/SupportEmail.global */ "./build.definitions/carcarenew/Globals/Application/SupportEmail.global")
@@ -98,7 +100,6 @@ let carcarenew_pages_carcarenew_zc_off_caritem_zc_off_caritem_detail_page = __we
 let carcarenew_pages_carcarenew_zc_off_caritem_zc_off_caritem_list_page = __webpack_require__(/*! ./carcarenew/Pages/carcarenew_ZC_OFF_CARITEM/ZC_OFF_CARITEM_List.page */ "./build.definitions/carcarenew/Pages/carcarenew_ZC_OFF_CARITEM/ZC_OFF_CARITEM_List.page")
 let carcarenew_pages_carcarenew_zcds_off_material_zcds_off_material_detail_page = __webpack_require__(/*! ./carcarenew/Pages/carcarenew_ZCDS_OFF_MATERIAL/ZCDS_OFF_MATERIAL_Detail.page */ "./build.definitions/carcarenew/Pages/carcarenew_ZCDS_OFF_MATERIAL/ZCDS_OFF_MATERIAL_Detail.page")
 let carcarenew_pages_carcarenew_zcds_off_material_zcds_off_material_list_page = __webpack_require__(/*! ./carcarenew/Pages/carcarenew_ZCDS_OFF_MATERIAL/ZCDS_OFF_MATERIAL_List.page */ "./build.definitions/carcarenew/Pages/carcarenew_ZCDS_OFF_MATERIAL/ZCDS_OFF_MATERIAL_List.page")
-let carcarenew_pages_createitem2_page = __webpack_require__(/*! ./carcarenew/Pages/CreateItem2.page */ "./build.definitions/carcarenew/Pages/CreateItem2.page")
 let carcarenew_pages_createitem_page = __webpack_require__(/*! ./carcarenew/Pages/CreateItem.page */ "./build.definitions/carcarenew/Pages/CreateItem.page")
 let carcarenew_pages_createwash_page = __webpack_require__(/*! ./carcarenew/Pages/CreateWash.page */ "./build.definitions/carcarenew/Pages/CreateWash.page")
 let carcarenew_pages_displaywash_page = __webpack_require__(/*! ./carcarenew/Pages/DisplayWash.page */ "./build.definitions/carcarenew/Pages/DisplayWash.page")
@@ -120,6 +121,7 @@ let carcarenew_rules_callcreatedeep_js = __webpack_require__(/*! ./carcarenew/Ru
 let carcarenew_rules_errorarchive_errorarchive_checkforsyncerror_js = __webpack_require__(/*! ./carcarenew/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js */ "./build.definitions/carcarenew/Rules/ErrorArchive/ErrorArchive_CheckForSyncError.js")
 let carcarenew_rules_header_deleteconfirmation_js = __webpack_require__(/*! ./carcarenew/Rules/Header_DeleteConfirmation.js */ "./build.definitions/carcarenew/Rules/Header_DeleteConfirmation.js")
 let carcarenew_rules_item_count_js = __webpack_require__(/*! ./carcarenew/Rules/Item_count.js */ "./build.definitions/carcarenew/Rules/Item_count.js")
+let carcarenew_rules_item_number_js = __webpack_require__(/*! ./carcarenew/Rules/Item_number.js */ "./build.definitions/carcarenew/Rules/Item_number.js")
 let carcarenew_rules_logging_loglevels_js = __webpack_require__(/*! ./carcarenew/Rules/Logging/LogLevels.js */ "./build.definitions/carcarenew/Rules/Logging/LogLevels.js")
 let carcarenew_rules_logging_settracecategories_js = __webpack_require__(/*! ./carcarenew/Rules/Logging/SetTraceCategories.js */ "./build.definitions/carcarenew/Rules/Logging/SetTraceCategories.js")
 let carcarenew_rules_logging_setuserloglevel_js = __webpack_require__(/*! ./carcarenew/Rules/Logging/SetUserLogLevel.js */ "./build.definitions/carcarenew/Rules/Logging/SetUserLogLevel.js")
@@ -127,9 +129,11 @@ let carcarenew_rules_logging_togglelogging_js = __webpack_require__(/*! ./carcar
 let carcarenew_rules_logging_tracecategories_js = __webpack_require__(/*! ./carcarenew/Rules/Logging/TraceCategories.js */ "./build.definitions/carcarenew/Rules/Logging/TraceCategories.js")
 let carcarenew_rules_logging_userlogsetting_js = __webpack_require__(/*! ./carcarenew/Rules/Logging/UserLogSetting.js */ "./build.definitions/carcarenew/Rules/Logging/UserLogSetting.js")
 let carcarenew_rules_materialf4_js = __webpack_require__(/*! ./carcarenew/Rules/MaterialF4.js */ "./build.definitions/carcarenew/Rules/MaterialF4.js")
+let carcarenew_rules_materialprice_js = __webpack_require__(/*! ./carcarenew/Rules/MaterialPrice.js */ "./build.definitions/carcarenew/Rules/MaterialPrice.js")
 let carcarenew_rules_matlist_js = __webpack_require__(/*! ./carcarenew/Rules/MatList.js */ "./build.definitions/carcarenew/Rules/MatList.js")
 let carcarenew_rules_service_initialize_js = __webpack_require__(/*! ./carcarenew/Rules/Service/Initialize.js */ "./build.definitions/carcarenew/Rules/Service/Initialize.js")
 let carcarenew_rules_service_postcall_js = __webpack_require__(/*! ./carcarenew/Rules/Service/PostCall.js */ "./build.definitions/carcarenew/Rules/Service/PostCall.js")
+let carcarenew_rules_storeglobalvalues_js = __webpack_require__(/*! ./carcarenew/Rules/StoreGlobalValues.js */ "./build.definitions/carcarenew/Rules/StoreGlobalValues.js")
 let carcarenew_services_carcarenew_service = __webpack_require__(/*! ./carcarenew/Services/carcarenew.service */ "./build.definitions/carcarenew/Services/carcarenew.service")
 let carcarenew_styles_styles_css = __webpack_require__(/*! ./carcarenew/Styles/Styles.css */ "./build.definitions/carcarenew/Styles/Styles.css")
 let carcarenew_styles_styles_json = __webpack_require__(/*! ./carcarenew/Styles/Styles.json */ "./build.definitions/carcarenew/Styles/Styles.json")
@@ -195,6 +199,8 @@ module.exports = {
 	carcarenew_actions_navtoselectwash_action : carcarenew_actions_navtoselectwash_action,
 	carcarenew_actions_odatacreateheader_action : carcarenew_actions_odatacreateheader_action,
 	carcarenew_actions_odatacreateitem_action : carcarenew_actions_odatacreateitem_action,
+	carcarenew_actions_odatacreateitemtable_action : carcarenew_actions_odatacreateitemtable_action,
+	carcarenew_actions_odatareadheader_action : carcarenew_actions_odatareadheader_action,
 	carcarenew_globals_application_appdefinition_version_global : carcarenew_globals_application_appdefinition_version_global,
 	carcarenew_globals_application_applicationname_global : carcarenew_globals_application_applicationname_global,
 	carcarenew_globals_application_supportemail_global : carcarenew_globals_application_supportemail_global,
@@ -210,7 +216,6 @@ module.exports = {
 	carcarenew_pages_carcarenew_zc_off_caritem_zc_off_caritem_list_page : carcarenew_pages_carcarenew_zc_off_caritem_zc_off_caritem_list_page,
 	carcarenew_pages_carcarenew_zcds_off_material_zcds_off_material_detail_page : carcarenew_pages_carcarenew_zcds_off_material_zcds_off_material_detail_page,
 	carcarenew_pages_carcarenew_zcds_off_material_zcds_off_material_list_page : carcarenew_pages_carcarenew_zcds_off_material_zcds_off_material_list_page,
-	carcarenew_pages_createitem2_page : carcarenew_pages_createitem2_page,
 	carcarenew_pages_createitem_page : carcarenew_pages_createitem_page,
 	carcarenew_pages_createwash_page : carcarenew_pages_createwash_page,
 	carcarenew_pages_displaywash_page : carcarenew_pages_displaywash_page,
@@ -232,6 +237,7 @@ module.exports = {
 	carcarenew_rules_errorarchive_errorarchive_checkforsyncerror_js : carcarenew_rules_errorarchive_errorarchive_checkforsyncerror_js,
 	carcarenew_rules_header_deleteconfirmation_js : carcarenew_rules_header_deleteconfirmation_js,
 	carcarenew_rules_item_count_js : carcarenew_rules_item_count_js,
+	carcarenew_rules_item_number_js : carcarenew_rules_item_number_js,
 	carcarenew_rules_logging_loglevels_js : carcarenew_rules_logging_loglevels_js,
 	carcarenew_rules_logging_settracecategories_js : carcarenew_rules_logging_settracecategories_js,
 	carcarenew_rules_logging_setuserloglevel_js : carcarenew_rules_logging_setuserloglevel_js,
@@ -239,9 +245,11 @@ module.exports = {
 	carcarenew_rules_logging_tracecategories_js : carcarenew_rules_logging_tracecategories_js,
 	carcarenew_rules_logging_userlogsetting_js : carcarenew_rules_logging_userlogsetting_js,
 	carcarenew_rules_materialf4_js : carcarenew_rules_materialf4_js,
+	carcarenew_rules_materialprice_js : carcarenew_rules_materialprice_js,
 	carcarenew_rules_matlist_js : carcarenew_rules_matlist_js,
 	carcarenew_rules_service_initialize_js : carcarenew_rules_service_initialize_js,
 	carcarenew_rules_service_postcall_js : carcarenew_rules_service_postcall_js,
+	carcarenew_rules_storeglobalvalues_js : carcarenew_rules_storeglobalvalues_js,
 	carcarenew_services_carcarenew_service : carcarenew_services_carcarenew_service,
 	carcarenew_styles_styles_css : carcarenew_styles_styles_css,
 	carcarenew_styles_styles_json : carcarenew_styles_styles_json,
@@ -602,20 +610,112 @@ function Customers_DeleteConfirmation(context) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ CustomerOrderCount)
+/* harmony export */   "default": () => (/* binding */ Item_count)
 /* harmony export */ });
 /**
 * Describe this function...
 * @param {IClientAPI} context
 */
-function CustomerOrderCount(context) {
+function Item_count(context) {
     // Retrieves the current customer's information from the context
     const currentPlateNum = context.getPageProxy().binding['@odata.readLink'];
     // Counts the number of sales orders associated with the current customer.
-    return context.count('/carcarenew/Services/carcarenew.service', currentPlateNum + '/_Items', '').then((count) => {
-        return count;
+    // var link = context.count('/carcarenew/Services/carcarenew.service', currentPlateNum + '/_Item', '');
+    // var data = context.read('/carcarenew/Services/carcarenew.service', currentPlateNum + '_Item?$apply=groupby((Currency),aggregate(Price with sum as TotalAmount))', []);
+    // // return data.then((sumPrices) => {
+    // //     return Materials.reduce((total, Material) => {
+    // //       return total + Material.price;
+    // //     }, 0);
+    // //   };
+    // //return sumPrices;
+    // var count = link.then((count) => {
+    //     return count;
+    // });
+    // if (data.length >0){
+    //     let prod = results.getItem(0);
+    //     return prod.TotatAmount;
+    // }
+    // return data.then((sumPrices) => {
+    //     sumPrices = 20.5;
+    //     return sumPrices;
+    // } );
+    ///sap/opu/odata4/sap/zsb_off_carcare/srvd_a2x/sap/zsd_off_carcare/0001/ZC_OFF_CARCARE(Site='N001',PlateNum='3053',PlateCode='N',MobileNum='30533053',CreatedOn=2024-05-24)/_Item?$apply=groupby((Currency),aggregate(Price with sum as TotalAmount))
+
+    return context.read('/carcarenew/Services/carcarenew.service', currentPlateNum + '/_Item', []).then(function (results) {
+        let data = results._array;
+        let totalPrice = 0;
+        // Iterate over the array with a for loop
+        for (let i = 0; i < data.length; i++) {
+            totalPrice = data[i].Price + totalPrice;
+        }
+        var currency = data[0].Currency;
+        var ReturnText = "Total Price : " + totalPrice + "" + currency;
+        return ReturnText;
     });
 }
+
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Rules/Item_number.js":
+/*!***********************************************************!*\
+  !*** ./build.definitions/carcarenew/Rules/Item_number.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Item_number)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function Item_number(clientAPI) {
+    var ItemNo = 10;
+    let desiredLength = 6;
+    let ItemNoZeroes = ItemNo.toString().padStart(desiredLength, '0');
+    const currentPlateNum = clientAPI.getPageProxy().binding['@odata.readLink'];
+    return clientAPI.read('/carcarenew/Services/carcarenew.service', currentPlateNum + '/_Item', []).then(function (results) {
+        let data = results._array;
+        if(data.length == 0 ){
+            ItemNoZeroes = ItemNo.toString().padStart(desiredLength, '0');
+            return ItemNoZeroes;
+        }else{
+            const highestItemNo = data.reduce((max, item) => item.ItemNo > max ? item.ItemNo : max, data[0].ItemNo);
+            var highestItemNoInt = parseInt(highestItemNo,10);
+            ItemNo = highestItemNoInt + 10;
+            ItemNoZeroes = ItemNo.toString().padStart(desiredLength, '0');
+            return ItemNoZeroes;
+        }
+        
+    }
+    )
+
+
+    // var link = ('/carcarenew/Services/carcarenew.service', currentPlateNum + '/_Item', []);
+    // let data = clientAPI.read(link);
+    // let array = data._array;
+    // if(
+    //     array.length < 1){
+    //         return ItemNo;
+    // }
+    // if( array.length > 0){
+    //     ItemNo = data[0].ItemNo + 10;
+    //     return ItemNo;
+    // }    
+}
+
+// return context.read('/carcarenew/Services/carcarenew.service', currentPlateNum + '/_Item', []).then(function (results) {
+//     let data = results._array;
+//     let totalPrice = 0;
+//     // Iterate over the array with a for loop
+//     for (let i = 0; i < data.length; i++) {
+//         totalPrice = data[i].Price + totalPrice;
+//     }
+//     return totalPrice;
+// });
 
 
 /***/ }),
@@ -915,6 +1015,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 function MatList(clientAPI) {
 }
+// For Git
 
 
 /***/ }),
@@ -944,16 +1045,42 @@ function MaterialF4(clientAPI) {
                 DisplayValue: Material + ': ' + MaterialName + ': ' + Price ,ReturnValue: Material
             }));
           //clientAPI.getPageProxy().getControls()[0].getControl("FCCList").setPickerItems(data);
-          clientAPI.getPageProxy().getControl('SectionFormCell1').setPickerItems(data);
-            //clientAPI.getPageProxy().getControls()[0].getControl("MListpicker").setValue(["I47"]);
-          //  clientAPI.getPageProxy().getControls()[0].getControl("MListpicker").reset();  
- 
-         
+          var a = clientAPI.getPageProxy();
+          var b = a.getControl('SectionedTable0');
+          var c = b.getControl('FCCList2');
+          c.setPickerItems(data);
+          // var d = b.getControl('FCCPrice');
+          // b.setValue('10');
+          // return data; 
         }
     });
  
 }
  
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Rules/MaterialPrice.js":
+/*!*************************************************************!*\
+  !*** ./build.definitions/carcarenew/Rules/MaterialPrice.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MaterialPrice)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function MaterialPrice(clientAPI) {
+    const FCCList = clientAPI.getControl("FCCList");
+    var Material = FCCList.getValue();
+    return Material;
+}
+
 
 /***/ }),
 
@@ -1005,6 +1132,28 @@ function Initialize(context) {
   \****************************************************************/
 /***/ (() => {
 
+
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Rules/StoreGlobalValues.js":
+/*!*****************************************************************!*\
+  !*** ./build.definitions/carcarenew/Rules/StoreGlobalValues.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ StoreGlobalValues)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function StoreGlobalValues(clientAPI) {
+
+}
 
 
 /***/ }),
@@ -1261,17 +1410,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"000000","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCItem","IsVisible":true,"Separator":true,"Caption":"Item","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCMaterial","IsVisible":true,"Separator":true,"Caption":"Material","PlaceHolder":"00000","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCCList","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZCDS_OFF_MATERIAL"},"DisplayValue":"{Material} {MaterialName} {Price}","ReturnValue":"{Material}"}}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"CreateItem","Caption":"Create Item","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Save","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/ODataCreateItem.action"}],"_Name":"ActionBar1"}}
-
-/***/ }),
-
-/***/ "./build.definitions/carcarenew/Pages/CreateItem2.page":
-/*!*************************************************************!*\
-  !*** ./build.definitions/carcarenew/Pages/CreateItem2.page ***!
-  \*************************************************************/
-/***/ ((module) => {
-
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"Material","IsVisible":true,"Separator":true,"Caption":"Material","PlaceHolder":"00000","Enabled":true,"IsEditable":true}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCListPicker","IsVisible":true,"Separator":true,"AllowMultipleSelection":true,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"PickerItems":{"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZCDS_OFF_MATERIAL"},"DisplayValue":"{Material} {MaterialName} {Price}","ReturnValue":"{Material} {MaterialName} {Price}"}}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell1"}]}],"_Type":"Page","_Name":"CreateItem2","Caption":"CreateItem2","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"/carcarenew/Rules/Item_number.js","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCItem","IsVisible":true,"Separator":true,"Caption":"Item","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCCList","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZCDS_OFF_MATERIAL"},"DisplayValue":"{Material} {MaterialName} {Price}","ReturnValue":"{Material}"}},{"Value":"/carcarenew/Rules/MaterialPrice.js","_Type":"Control.Type.FormCell.SimpleProperty","DataSubscriptions":["ZCDS_OFF_MATERIAL"],"_Name":"FCCPrice","IsVisible":true,"Separator":true,"Caption":"Price","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":true},{"Value":"INR","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCCurrency","IsVisible":true,"Separator":true,"Caption":"Currency","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"Value":"1","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCQuantity","IsVisible":true,"Separator":true,"Caption":"Quantity","PlaceHolder":"1","Enabled":true,"IsEditable":true},{"Value":"EA","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCUnit","IsVisible":true,"Separator":true,"Caption":"Unit","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCCList2","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":"/carcarenew/Rules/MaterialF4.js"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"CreateItem","Caption":"Create Item","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Save","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/ODataCreateItem.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1291,7 +1430,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \*************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"_Type":"Section.Type.ObjectTable","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE","QueryOptions":"$filter=PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}'"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No Order Found","FooterVisible":false},"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"ObjectCell":{"Title":"$(D,{CreatedOn},'','',{format:'medium'})","Subhead":"{PlateNum}","DisplayDescriptionInMobile":true,"StatusText":"{FirstName}, {PlateCode}, {MobileNum}, {Site}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":"/carcarenew/Actions/navToHeaderDetail.action","Selected":false,"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]}},"Search":{"Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"DisplayWash","Caption":"DisplayWash","PrefersLargeCaption":true}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"_Type":"Section.Type.ObjectTable","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE","QueryOptions":"$expand=_Item&$filter=PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}' and PlateCode eq '{{#Page:CreateWash/#Control:FCPlateCode/#Value}}' and Site eq '{{#Page:CreateWash/#Control:FCSite/#Value}}' and MobileNum eq '{{#Page:CreateWash/#Control:FCMobile/#Value}}'"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No Order Found","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]},"Title":"$(D,{CreatedOn},'','',{format:'medium'})","Subhead":"{PlateNum}","DisplayDescriptionInMobile":true,"StatusText":"{FirstName}, {PlateCode}, {MobileNum}, {Site}","PreserveIconStackSpacing":false,"AccessoryType":"DisclosureIndicator","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":"/carcarenew/Actions/navToHeaderDetail.action","Selected":false},"Search":{"Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"_Type":"Page","_Name":"DisplayWash","Caption":"DisplayWash","PrefersLargeCaption":true}
 
 /***/ }),
 
@@ -1321,7 +1460,7 @@ module.exports = {"Controls":[{"_Type":"Control.Type.SectionedTable","_Name":"Se
   \**************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE","QueryOptions":"$filter=Site eq '{{#Page:CreateWash/#Control:FCSite/#Value}}' and PlateCode eq '{{#Page:CreateWash/#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}'"},"_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{Site}","_Name":"KeyValue0","KeyName":"Site","Visible":true},{"Value":"{CreatedOn}","_Name":"KeyValue1","KeyName":"Created On","Visible":true},{"Value":"{PlateCode}","_Name":"KeyValue2","KeyName":"Plate Code","Visible":true},{"Value":"{PlateNum}","_Name":"KeyValue3","KeyName":"Plate Num","Visible":true},{"Value":"{MobileNum}","_Name":"KeyValue4","KeyName":"Mobile Num","Visible":true},{"Value":"{FirstName}","_Name":"KeyValue5","KeyName":"Name","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Name":"SectionHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Selected Materials"},"Footer":{"_Name":"SectionFooter0","Caption":"See All","AttributeLabel":"/carcarenew/Rules/Item_count.js","AccessoryType":"DisclosureIndicator","FooterStyle":"Attribute","Visible":true,"OnPress":{"Name":"/carcarenew/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/carcarenew/Pages/SelectedItems.page"}},"UseBottomPadding":false},"_Type":"Section.Type.ObjectTable","DataSubscriptions":["ZC_OFF_CARITEM"],"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"{@odata.readLink}/_Item","QueryOptions":"$expand=_Header&$orderby=PlateNum&$select=ItemNo,Material,MobileNum,PlateCode,PlateNum,Site","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No Items Found","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]},"Title":"{PlateNum}","Subhead":"{Material}","DisplayDescriptionInMobile":true,"StatusText":"{ItemNo}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/carcarenew/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/carcarenew/Pages/SelectedItemsDetail.page"}},"Selected":false},"Search":{"Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"DesignTimeTarget":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE","QueryOptions":"$expand=_Item&$filter=Site eq '{{#Control:FCSite/#Value}}' and PlateCode eq '{{#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Control:FCPlateNum/#Value}}' and MobileNum eq '{{#Control:FCMobile/#Value}}'"},"_Type":"Page","_Name":"HeaderDetail","Caption":"Detail","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Rules/Header_DeleteConfirmation.js"}],"_Name":"ActionBar1"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Add Item","OnPress":"/carcarenew/Actions/navToCreateItem.action","Image":"res://mdk_logo.png","Enabled":true,"ButtonType":"Text","Semantic":"Tint","ImagePosition":"Leading"}]}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"{@odata.readLink}/_Item","QueryOptions":"$filter=Site eq '{{#Page:CreateWash/#Control:FCSite/#Value}}' and PlateCode eq '{{#Page:CreateWash/#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}'"},"_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"KeyAndValues":[{"Value":"{Site}","_Name":"KeyValue0","KeyName":"Site","Visible":true},{"Value":"{CreatedOn}","_Name":"KeyValue1","KeyName":"Created On","Visible":true},{"Value":"{PlateCode}","_Name":"KeyValue2","KeyName":"Plate Code","Visible":true},{"Value":"{PlateNum}","_Name":"KeyValue3","KeyName":"Plate Num","Visible":true},{"Value":"{MobileNum}","_Name":"KeyValue4","KeyName":"Mobile Num","Visible":true},{"Value":"{FirstName}","_Name":"KeyValue5","KeyName":"Name","Visible":true}],"MaxItemCount":1,"_Type":"Section.Type.KeyValue","_Name":"SectionKeyValue0","Visible":true,"EmptySection":{"FooterVisible":false},"Layout":{"NumberOfColumns":2}},{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Header":{"_Name":"SectionHeader0","AccessoryType":"None","UseTopPadding":true,"Caption":"Selected Materials"},"Footer":{"_Name":"SectionFooter0","Caption":"See All","AttributeLabel":"/carcarenew/Rules/Item_count.js","AccessoryType":"DisclosureIndicator","FooterStyle":"Attribute","Visible":true,"OnPress":{"Name":"/carcarenew/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/carcarenew/Pages/SelectedItems.page"}},"UseBottomPadding":false},"_Type":"Section.Type.ObjectTable","DataSubscriptions":["ZC_OFF_CARITEM"],"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"{@odata.readLink}/_Item","QueryOptions":"$expand=_Header&$orderby=PlateNum&$select=ItemNo,Material,MobileNum,PlateCode,PlateNum,Site","ReadLink":"{@odata.readLink}"},"_Name":"SectionObjectTable0","Visible":true,"EmptySection":{"Caption":"No Items Found","FooterVisible":false},"ObjectCell":{"ContextMenu":{"Items":[],"PerformFirstActionWithFullSwipe":true,"LeadingItems":[],"TrailingItems":[]},"Title":"{Material}","Subhead":"{Price}","DisplayDescriptionInMobile":true,"StatusText":"{ItemNo}","SubstatusText":"{Price} {Currency}","PreserveIconStackSpacing":false,"AccessoryType":"None","Tags":[],"AvatarStack":{"Avatars":[],"ImageIsCircular":true,"ImageHasBorder":false},"AvatarGrid":{"Avatars":[],"ImageIsCircular":true},"OnPress":{"Name":"/carcarenew/Actions/GenericNavigation.action","Properties":{"PageToOpen":"/carcarenew/Pages/SelectedItemsDetail.page"}},"Selected":false},"Search":{"Enabled":true},"DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"HighlightSelectedItem":false,"Selection":{"ExitOnLastDeselect":true,"LongPressToEnable":"None","Mode":"None"}}]}],"DesignTimeTarget":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE","QueryOptions":"$expand=_Item&$filter=Site eq '{{#Control:FCSite/#Value}}' and PlateCode eq '{{#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Control:FCPlateNum/#Value}}' and MobileNum eq '{{#Control:FCMobile/#Value}}'"},"_Type":"Page","_Name":"HeaderDetail","Caption":"Detail","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Trash","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Rules/Header_DeleteConfirmation.js"}],"_Name":"ActionBar1"},"FioriToolbar":{"_Type":"Control.Type.FioriToolbar","_Name":"FioriToolbar0","Items":[{"_Type":"FioriToolbarItem.Type.Button","_Name":"ToolbarItem0","Visible":true,"Title":"Add Item","OnPress":"/carcarenew/Actions/navToCreateItem.action","Image":"res://mdk_logo.png","Enabled":true,"ButtonType":"Text","Semantic":"Tint","ImagePosition":"Leading"}]}}
 
 /***/ }),
 
@@ -1761,7 +1900,7 @@ module.exports = {"Animated":true,"CompletionMessage":"Logs Uploaded","Completio
   \***********************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"ODataCreateHeader"},"OnFailure":"/carcarenew/Actions/CreateHeaderFailure.action","OnSuccess":"/carcarenew/Actions/navToDisplayWash.action","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE"},"Properties":{"Site":"#Page:CreateWash/#Control:FCSite/#Value","PlateNum":"#Page:CreateWash/#Control:FCPlateNum/#Value","PlateCode":"#Page:CreateWash/#Control:FCPlateCode/#Value","MobileNum":"#Page:CreateWash/#Control:FCMobile/#Value","CreatedOn":"#Page:CreateWash/#Control:FCDate/#Value","FirstName":"#Page:CreateWash/#Control:FCSite/#Value"}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult":{"_Name":"ODataCreateHeader"},"OnFailure":"/carcarenew/Actions/CreateHeaderFailure.action","OnSuccess":"/carcarenew/Actions/navToDisplayWash.action","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE"},"Properties":{"Site":"#Page:CreateWash/#Control:FCSite/#Value","PlateNum":"#Page:CreateWash/#Control:FCPlateNum/#Value","PlateCode":"#Page:CreateWash/#Control:FCPlateCode/#Value","MobileNum":"#Page:CreateWash/#Control:FCMobile/#Value","CreatedOn":"#Page:CreateWash/#Control:FCDate/#Value","FirstName":"#Page:CreateWash/#Control:FCName/#Value"}}
 
 /***/ }),
 
@@ -1771,7 +1910,27 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateEntity","ActionResult"
   \*********************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.ODataService.CreateRelatedEntity","ActionResult":{"_Name":"ODataCreateItem"},"OnFailure":"/carcarenew/Actions/CreateItemFailure.action","OnSuccess":"/carcarenew/Actions/CloseModalPage_Complete.action","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARITEM"},"ParentLink":{"Target":{"EntitySet":"ZC_OFF_CARCARE","ReadLink":"{@odata.readLink}"},"Property":"_Item"},"Properties":{"ItemNo":"#Control:FCCItem/#Value","Material":"#Page:CreateItem/#Control:FCCList/#SelectedValue"}}
+module.exports = {"_Type":"Action.Type.ODataService.CreateRelatedEntity","ActionResult":{"_Name":"ODataCreateItem"},"OnFailure":"/carcarenew/Actions/CreateItemFailure.action","OnSuccess":"/carcarenew/Actions/CloseModalPage_Complete.action","Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARITEM"},"ParentLink":{"Target":{"EntitySet":"ZC_OFF_CARCARE","ReadLink":"{@odata.readLink}"},"Property":"_Item"},"Properties":{"ItemNo":"#Control:FCCItem/#Value","Material":"#Page:CreateItem/#Control:FCCList/#SelectedValue","Price":"#Page:CreateItem/#Control:FCCPrice/#Value","Currency":"#Page:CreateItem/#Control:FCCCurrency/#Value","Quantity":"#Page:CreateItem/#Control:FCCQuantity/#Value","Unit":"#Page:CreateItem/#Control:FCCUnit/#Value"}}
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Actions/ODataCreateItemTable.action":
+/*!**************************************************************************!*\
+  !*** ./build.definitions/carcarenew/Actions/ODataCreateItemTable.action ***!
+  \**************************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.CreateRelatedEntity","ActionResult":{"_Name":"ODataCreateItemTable"},"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARITEM"},"ParentLink":{"Target":{"EntitySet":"ZC_OFF_CARCARE","ReadLink":"{@odata.readLink}"},"Property":"_Item"},"Properties":{"ItemNo":"000010","Material":""}}
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Actions/ODataReadHeader.action":
+/*!*********************************************************************!*\
+  !*** ./build.definitions/carcarenew/Actions/ODataReadHeader.action ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.ODataService.Read","ActionResult":{"_Name":"ODataReadHeader"},"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE","QueryOptions":"$top=1&$filter=PlateCode eq '{{#Page:CreateWash/#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}' and MobileNum eq '{{#Page:CreateWash/#Control:FCMobile/#Value}}' and Site eq '{{#Page:CreateWash/#Control:FCSite/#Value}}'"},"Properties":["Site","PlateNum","PlateCode","MobileNum","CreatedOn","Model","Manufacture","FirstName"]}
 
 /***/ }),
 
@@ -1941,7 +2100,7 @@ module.exports = {"_Type":"Action.Type.Navigation","PageToOpen":"/carcarenew/Pag
   \*********************************************************************/
 /***/ ((module) => {
 
-module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"navToCreateItem"},"PageToOpen":"/carcarenew/Pages/CreateItem.page","ModalPage":false,"Transition":{"Curve":"EaseIn","Name":"None"}}
+module.exports = {"_Type":"Action.Type.Navigation","ActionResult":{"_Name":"navToCreateItem"},"PageToOpen":"/carcarenew/Pages/CreateItem.page","ModalPage":true,"Transition":{"Curve":"EaseIn","Name":"None"}}
 
 /***/ }),
 

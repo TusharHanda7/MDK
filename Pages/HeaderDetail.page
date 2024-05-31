@@ -8,7 +8,7 @@
 			"_Type": "Control.Type.SectionedTable",
 			"Target": {
 				"Service": "/carcarenew/Services/carcarenew.service",
-				"EntitySet": "ZC_OFF_CARCARE",
+				"EntitySet": "{@odata.readLink}/_Item",
 				"QueryOptions": "$filter=Site eq '{{#Page:CreateWash/#Control:FCSite/#Value}}' and PlateCode eq '{{#Page:CreateWash/#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}'"
 			},
 			"_Name": "SectionedTable0",
@@ -122,10 +122,11 @@
 							"LeadingItems": [],
 							"TrailingItems": []
 						},
-						"Title": "{PlateNum}",
-						"Subhead": "{Material}",
+						"Title": "{Material}",
+						"Subhead": "{Price}",
 						"DisplayDescriptionInMobile": true,
 						"StatusText": "{ItemNo}",
+						"SubstatusText": "{Price} {Currency}",
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "None",
 						"Tags": [],

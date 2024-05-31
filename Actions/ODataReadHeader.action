@@ -1,0 +1,21 @@
+{
+	"_Type": "Action.Type.ODataService.Read",
+	"ActionResult": {
+		"_Name": "ODataReadHeader"
+	},
+	"Target": {
+		"Service": "/carcarenew/Services/carcarenew.service",
+		"EntitySet": "ZC_OFF_CARCARE",
+		"QueryOptions": "$top=1&$filter=PlateCode eq '{{#Page:CreateWash/#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}' and MobileNum eq '{{#Page:CreateWash/#Control:FCMobile/#Value}}' and Site eq '{{#Page:CreateWash/#Control:FCSite/#Value}}'"
+	},
+	"Properties": [
+		"Site",
+		"PlateNum",
+		"PlateCode",
+		"MobileNum",
+		"CreatedOn",
+		"Model",
+		"Manufacture",
+		"FirstName"
+	]
+}
