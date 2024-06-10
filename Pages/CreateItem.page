@@ -29,6 +29,9 @@
 							"IsEditable": false
 						},
 						{
+							"Value": [
+								"{Material}"
+							],
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "FCCList",
 							"IsVisible": true,
@@ -41,6 +44,7 @@
 								"PageSize": 50
 							},
 							"PickerPrompt": "Please select one single item",
+							"OnValueChange": "/carcarenew/Rules/MaterialSelection.js",
 							"IsSelectedSectionEnabled": false,
 							"IsPickerDismissedOnSelection": false,
 							"AllowDefaultValueIfOneItem": false,
@@ -58,7 +62,7 @@
 							}
 						},
 						{
-							"Value": "/carcarenew/Rules/MaterialPrice.js",
+							"Value": "/carcarenew/Rules/MaterialSelection.js",
 							"_Type": "Control.Type.FormCell.SimpleProperty",
 							"DataSubscriptions": [
 								"ZCDS_OFF_MATERIAL"
@@ -69,7 +73,21 @@
 							"Caption": "Price",
 							"PlaceHolder": "PlaceHolder",
 							"Enabled": true,
-							"IsEditable": true
+							"IsEditable": false
+						},
+						{
+							"Value": "/carcarenew/Rules/MaterialSelection.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"DataSubscriptions": [
+								"ZCDS_OFF_MATERIAL"
+							],
+							"_Name": "FCCPriceCopy",
+							"IsVisible": false,
+							"Separator": true,
+							"Caption": "Price",
+							"PlaceHolder": "PlaceHolder",
+							"Enabled": true,
+							"IsEditable": false
 						},
 						{
 							"Value": "INR",
@@ -90,6 +108,7 @@
 							"Separator": true,
 							"Caption": "Quantity",
 							"PlaceHolder": "1",
+							"OnValueChange": "/carcarenew/Rules/QuantityChange.js",
 							"Enabled": true,
 							"IsEditable": true
 						},
