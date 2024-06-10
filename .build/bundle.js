@@ -85,6 +85,7 @@ let carcarenew_actions_odatacreateheader_action = __webpack_require__(/*! ./carc
 let carcarenew_actions_odatacreateitem_action = __webpack_require__(/*! ./carcarenew/Actions/ODataCreateItem.action */ "./build.definitions/carcarenew/Actions/ODataCreateItem.action")
 let carcarenew_actions_odatacreateitemtable_action = __webpack_require__(/*! ./carcarenew/Actions/ODataCreateItemTable.action */ "./build.definitions/carcarenew/Actions/ODataCreateItemTable.action")
 let carcarenew_actions_odatareadheader_action = __webpack_require__(/*! ./carcarenew/Actions/ODataReadHeader.action */ "./build.definitions/carcarenew/Actions/ODataReadHeader.action")
+let carcarenew_actions_savevalidation_action = __webpack_require__(/*! ./carcarenew/Actions/SaveValidation.action */ "./build.definitions/carcarenew/Actions/SaveValidation.action")
 let carcarenew_globals_application_appdefinition_version_global = __webpack_require__(/*! ./carcarenew/Globals/Application/AppDefinition_Version.global */ "./build.definitions/carcarenew/Globals/Application/AppDefinition_Version.global")
 let carcarenew_globals_application_applicationname_global = __webpack_require__(/*! ./carcarenew/Globals/Application/ApplicationName.global */ "./build.definitions/carcarenew/Globals/Application/ApplicationName.global")
 let carcarenew_globals_application_supportemail_global = __webpack_require__(/*! ./carcarenew/Globals/Application/SupportEmail.global */ "./build.definitions/carcarenew/Globals/Application/SupportEmail.global")
@@ -130,7 +131,10 @@ let carcarenew_rules_logging_tracecategories_js = __webpack_require__(/*! ./carc
 let carcarenew_rules_logging_userlogsetting_js = __webpack_require__(/*! ./carcarenew/Rules/Logging/UserLogSetting.js */ "./build.definitions/carcarenew/Rules/Logging/UserLogSetting.js")
 let carcarenew_rules_materialf4_js = __webpack_require__(/*! ./carcarenew/Rules/MaterialF4.js */ "./build.definitions/carcarenew/Rules/MaterialF4.js")
 let carcarenew_rules_materialprice_js = __webpack_require__(/*! ./carcarenew/Rules/MaterialPrice.js */ "./build.definitions/carcarenew/Rules/MaterialPrice.js")
+let carcarenew_rules_materialselection_js = __webpack_require__(/*! ./carcarenew/Rules/MaterialSelection.js */ "./build.definitions/carcarenew/Rules/MaterialSelection.js")
 let carcarenew_rules_matlist_js = __webpack_require__(/*! ./carcarenew/Rules/MatList.js */ "./build.definitions/carcarenew/Rules/MatList.js")
+let carcarenew_rules_quantitychange_js = __webpack_require__(/*! ./carcarenew/Rules/QuantityChange.js */ "./build.definitions/carcarenew/Rules/QuantityChange.js")
+let carcarenew_rules_savevalidation_js = __webpack_require__(/*! ./carcarenew/Rules/SaveValidation.js */ "./build.definitions/carcarenew/Rules/SaveValidation.js")
 let carcarenew_rules_service_initialize_js = __webpack_require__(/*! ./carcarenew/Rules/Service/Initialize.js */ "./build.definitions/carcarenew/Rules/Service/Initialize.js")
 let carcarenew_rules_service_postcall_js = __webpack_require__(/*! ./carcarenew/Rules/Service/PostCall.js */ "./build.definitions/carcarenew/Rules/Service/PostCall.js")
 let carcarenew_rules_storeglobalvalues_js = __webpack_require__(/*! ./carcarenew/Rules/StoreGlobalValues.js */ "./build.definitions/carcarenew/Rules/StoreGlobalValues.js")
@@ -201,6 +205,7 @@ module.exports = {
 	carcarenew_actions_odatacreateitem_action : carcarenew_actions_odatacreateitem_action,
 	carcarenew_actions_odatacreateitemtable_action : carcarenew_actions_odatacreateitemtable_action,
 	carcarenew_actions_odatareadheader_action : carcarenew_actions_odatareadheader_action,
+	carcarenew_actions_savevalidation_action : carcarenew_actions_savevalidation_action,
 	carcarenew_globals_application_appdefinition_version_global : carcarenew_globals_application_appdefinition_version_global,
 	carcarenew_globals_application_applicationname_global : carcarenew_globals_application_applicationname_global,
 	carcarenew_globals_application_supportemail_global : carcarenew_globals_application_supportemail_global,
@@ -246,7 +251,10 @@ module.exports = {
 	carcarenew_rules_logging_userlogsetting_js : carcarenew_rules_logging_userlogsetting_js,
 	carcarenew_rules_materialf4_js : carcarenew_rules_materialf4_js,
 	carcarenew_rules_materialprice_js : carcarenew_rules_materialprice_js,
+	carcarenew_rules_materialselection_js : carcarenew_rules_materialselection_js,
 	carcarenew_rules_matlist_js : carcarenew_rules_matlist_js,
+	carcarenew_rules_quantitychange_js : carcarenew_rules_quantitychange_js,
+	carcarenew_rules_savevalidation_js : carcarenew_rules_savevalidation_js,
 	carcarenew_rules_service_initialize_js : carcarenew_rules_service_initialize_js,
 	carcarenew_rules_service_postcall_js : carcarenew_rules_service_postcall_js,
 	carcarenew_rules_storeglobalvalues_js : carcarenew_rules_storeglobalvalues_js,
@@ -1084,6 +1092,139 @@ function MaterialPrice(clientAPI) {
 
 /***/ }),
 
+/***/ "./build.definitions/carcarenew/Rules/MaterialSelection.js":
+/*!*****************************************************************!*\
+  !*** ./build.definitions/carcarenew/Rules/MaterialSelection.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MaterialSelection)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function MaterialSelection(clientAPI) {
+
+
+
+
+var oSeletedItem = clientAPI.evaluateTargetPath('#Page:CreateItem/#Control:FCCList/#Value/0/BindingObject');
+    var price = oSeletedItem.Price;
+
+var oSeletedItem = clientAPI.evaluateTargetPath('#Page:CreateItem/#Control:FCCList/#Value/0/BindingObject');
+    var price = oSeletedItem.Price
+if (price !== ""){
+    // let segControl = clientAPI.getPageProxy().getControl('SectionFormCell0').getControl('FCCPrice');
+    // segControl.setValue(price);
+
+    var totalUnitPriceFC = clientAPI.getPageProxy().evaluateTargetPath("#Control:FCCPrice");
+            totalUnitPriceFC.setValue(price);
+// Saving Netprice in one more field it will be hide from screen just for calulation
+            var totalUnitPriceFCCopy = clientAPI.getPageProxy().evaluateTargetPath("#Control:FCCPriceCopy");
+            totalUnitPriceFCCopy.setValue(price);
+
+}
+     
+    return price;
+                                                                          
+    // const selectedValue = clientAPI.evaluateTargetPath('#Page:CreateItem/#Control:ListPicker/#SelectedValue');
+    // console.log("Seleted Item", selectedValue)
+    // const { Description: description } = selectedValue[0].Price;
+    // return description;
+
+
+}
+
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Rules/QuantityChange.js":
+/*!**************************************************************!*\
+  !*** ./build.definitions/carcarenew/Rules/QuantityChange.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ QuantityChange)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+
+function QuantityChange(clientAPI) {
+   var FCCPriceCopy = clientAPI.evaluateTargetPath('#Page:CreateItem/#Control:FCCPriceCopy/#Value');
+    // let UnitPrice = clientAPI.evaluateTargetPath('#Page:CreateItem/#Control:FCCPrice/#Value');
+    let Qty = clientAPI.evaluateTargetPath('#Page:CreateItem/#Control:FCCQuantity/#Value');
+
+    if(Qty !== "" && Qty !== 0){
+
+        var sum = parseFloat(FCCPriceCopy) * Qty ;
+       sum =  parseFloat(sum).toFixed(2);
+       
+      var totalUnitPriceFC = clientAPI.getPageProxy().evaluateTargetPath("#Control:FCCPrice");
+            totalUnitPriceFC.setValue(sum);
+
+    }else {
+        
+    }
+            
+}
+
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Rules/SaveValidation.js":
+/*!**************************************************************!*\
+  !*** ./build.definitions/carcarenew/Rules/SaveValidation.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SaveValidation)
+/* harmony export */ });
+/**
+ * Describe this function...
+ * @param {IClientAPI} clientAPI
+ */
+function SaveValidation(clientAPI) {
+
+
+
+let FCSite =  clientAPI.getPageProxy().evaluateTargetPath("#Control:FCSite").getValue();
+let FCPlateCode = clientAPI.getPageProxy().evaluateTargetPath("#Control:FCPlateCode").getValue();
+let FCPlateNum =  clientAPI.getPageProxy().evaluateTargetPath("#Control:FCPlateNum").getValue();
+let FCMobile = clientAPI.getPageProxy().evaluateTargetPath("#Control:FCMobile").getValue();
+           
+    // let FCSite = clientAPI.evaluateTargetPath('#Page:CreateWash/#Control:FCSite/#Value');
+    // let FCPlateCode = clientAPI.evaluateTargetPath('#Page:CreateWash/#Control:FCPlateCode/#Value');
+    // let FCPlateNum = clientAPI.evaluateTargetPath('#Page:CreateWash/#Control:FCPlateNum/#Value');
+    // let FCMobile = clientAPI.evaluateTargetPath('#Page:CreateWash/#Control:FCMobile/#Value');
+
+    if((FCSite ==="" || FCSite == undefined) && (FCPlateCode === "" || FCSite == undefined ) && (FCPlateNum === "" || FCSite == undefined) && (FCMobile === "" || FCSite == undefined)){
+        // validation popup
+        return clientAPI.executeAction("/carcarenew/Actions/SaveValidation.action");
+    }else{
+        // good to post
+        return clientAPI.executeAction("/carcarenew/Actions/ODataCreateHeader.action");
+    }
+
+
+
+
+}
+
+
+/***/ }),
+
 /***/ "./build.definitions/carcarenew/Rules/Service/Initialize.js":
 /*!******************************************************************!*\
   !*** ./build.definitions/carcarenew/Rules/Service/Initialize.js ***!
@@ -1410,7 +1551,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":true,"_Type
   \************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"/carcarenew/Rules/Item_number.js","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCItem","IsVisible":true,"Separator":true,"Caption":"Item","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCCList","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZCDS_OFF_MATERIAL"},"DisplayValue":"{Material} {MaterialName} {Price}","ReturnValue":"{Material}"}},{"Value":"/carcarenew/Rules/MaterialPrice.js","_Type":"Control.Type.FormCell.SimpleProperty","DataSubscriptions":["ZCDS_OFF_MATERIAL"],"_Name":"FCCPrice","IsVisible":true,"Separator":true,"Caption":"Price","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":true},{"Value":"INR","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCCurrency","IsVisible":true,"Separator":true,"Caption":"Currency","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"Value":"1","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCQuantity","IsVisible":true,"Separator":true,"Caption":"Quantity","PlaceHolder":"1","Enabled":true,"IsEditable":true},{"Value":"EA","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCUnit","IsVisible":true,"Separator":true,"Caption":"Unit","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCCList2","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":"/carcarenew/Rules/MaterialF4.js"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"CreateItem","Caption":"Create Item","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Save","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/ODataCreateItem.action"}],"_Name":"ActionBar1"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"Value":"/carcarenew/Rules/Item_number.js","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCItem","IsVisible":true,"Separator":true,"Caption":"Item","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"Value":["{Material}"],"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCCList","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","OnValueChange":"/carcarenew/Rules/MaterialSelection.js","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":{"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZCDS_OFF_MATERIAL"},"DisplayValue":"{Material} {MaterialName} {Price}","ReturnValue":"{Material}"}},{"Value":"/carcarenew/Rules/MaterialSelection.js","_Type":"Control.Type.FormCell.SimpleProperty","DataSubscriptions":["ZCDS_OFF_MATERIAL"],"_Name":"FCCPrice","IsVisible":true,"Separator":true,"Caption":"Price","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"Value":"/carcarenew/Rules/MaterialSelection.js","_Type":"Control.Type.FormCell.SimpleProperty","DataSubscriptions":["ZCDS_OFF_MATERIAL"],"_Name":"FCCPriceCopy","IsVisible":false,"Separator":true,"Caption":"Price","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"Value":"INR","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCCurrency","IsVisible":true,"Separator":true,"Caption":"Currency","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"Value":"1","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCQuantity","IsVisible":true,"Separator":true,"Caption":"Quantity","PlaceHolder":"1","OnValueChange":"/carcarenew/Rules/QuantityChange.js","Enabled":true,"IsEditable":true},{"Value":"EA","_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCCUnit","IsVisible":true,"Separator":true,"Caption":"Unit","PlaceHolder":"PlaceHolder","Enabled":true,"IsEditable":false},{"_Type":"Control.Type.FormCell.ListPicker","_Name":"FCCList2","IsVisible":true,"Separator":true,"AllowMultipleSelection":false,"AllowEmptySelection":true,"Caption":"Choose Material","DataPaging":{"ShowLoadingIndicator":false,"PageSize":50},"PickerPrompt":"Please select one single item","IsSelectedSectionEnabled":false,"IsPickerDismissedOnSelection":false,"IsSearchCancelledAfterSelection":false,"AllowDefaultValueIfOneItem":false,"IsEditable":true,"Search":{"Enabled":true},"PickerItems":"/carcarenew/Rules/MaterialF4.js"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"CreateItem","Caption":"Create Item","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Cancel","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/CloseModalPage_Cancel.action"},{"_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Save","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/ODataCreateItem.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1420,7 +1561,7 @@ module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Typ
   \************************************************************/
 /***/ ((module) => {
 
-module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCSite","IsVisible":true,"Separator":true,"Caption":"Site","PlaceHolder":"Site","KeyboardType":"Default","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCPlateCode","IsVisible":true,"Separator":true,"Caption":"Plate Code","PlaceHolder":"Plate Code","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCPlateNum","IsVisible":true,"Separator":true,"Caption":"Plate Num","PlaceHolder":"Plate Num","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCMobile","IsVisible":true,"Separator":true,"Caption":"Mobile","PlaceHolder":"Mobile","KeyboardType":"Phone","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCModel","IsVisible":true,"Separator":true,"Caption":"Model","PlaceHolder":"Model","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCName","IsVisible":true,"Separator":true,"Caption":"Name","PlaceHolder":"Name","Enabled":true,"IsEditable":true},{"Value":"2024-05-24T18:58:19","_Type":"Control.Type.FormCell.DatePicker","_Name":"FCDate","IsVisible":true,"Separator":true,"Caption":"Date","IsEditable":false,"Mode":"Date"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"CreateWash","Caption":"CreateWash","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Save","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/ODataCreateHeader.action"},{"_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Cancel","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar1"}}
+module.exports = {"Controls":[{"FilterFeedbackBar":{"ShowAllFilters":false,"_Type":"Control.Type.FilterFeedbackBar"},"_Type":"Control.Type.SectionedTable","_Name":"SectionedTable0","Sections":[{"Separators":{"TopSectionSeparator":false,"BottomSectionSeparator":true,"HeaderSeparator":true,"FooterSeparator":true,"ControlSeparator":true},"Controls":[{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCSite","IsVisible":true,"Separator":true,"validationProperties":{"ValidationMessageColor":"#f26363","SeparatorBackgroundColor":"#ff9393","ValidationViewBackgroundColor":"#f48989","ValidationViewIsHidden":true},"Caption":"Site","PlaceHolder":"Site","KeyboardType":"Default","AlternateInput":"None","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCPlateCode","IsVisible":true,"Separator":true,"Caption":"Plate Code","PlaceHolder":"Plate Code","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCPlateNum","IsVisible":true,"Separator":true,"Caption":"Plate Num","PlaceHolder":"Plate Num","KeyboardType":"Number","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCMobile","IsVisible":true,"Separator":true,"Caption":"Mobile","PlaceHolder":"Mobile","KeyboardType":"Phone","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCModel","IsVisible":true,"Separator":true,"Caption":"Model","PlaceHolder":"Model","Enabled":true,"IsEditable":true},{"_Type":"Control.Type.FormCell.SimpleProperty","_Name":"FCName","IsVisible":true,"Separator":true,"Caption":"Name","PlaceHolder":"Name","Enabled":true,"IsEditable":true},{"Value":"2024-05-24T18:58:19","_Type":"Control.Type.FormCell.DatePicker","_Name":"FCDate","IsVisible":true,"Separator":true,"Caption":"Date","IsEditable":false,"Mode":"Date"}],"Visible":true,"EmptySection":{"FooterVisible":false},"_Type":"Section.Type.FormCell","_Name":"SectionFormCell0"}]}],"_Type":"Page","_Name":"CreateWash","Caption":"CreateWash","PrefersLargeCaption":true,"ActionBar":{"Items":[{"_Name":"ActionBarItem0","Caption":"Item","SystemItem":"Save","Position":"Left","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Rules/SaveValidation.js"},{"_Name":"ActionBarItem1","Caption":"Item","SystemItem":"Cancel","Position":"Right","IsIconCircular":false,"Visible":true,"OnPress":"/carcarenew/Actions/CloseModalPage_Cancel.action"}],"_Name":"ActionBar1"}}
 
 /***/ }),
 
@@ -1931,6 +2072,16 @@ module.exports = {"_Type":"Action.Type.ODataService.CreateRelatedEntity","Action
 /***/ ((module) => {
 
 module.exports = {"_Type":"Action.Type.ODataService.Read","ActionResult":{"_Name":"ODataReadHeader"},"Target":{"Service":"/carcarenew/Services/carcarenew.service","EntitySet":"ZC_OFF_CARCARE","QueryOptions":"$top=1&$filter=PlateCode eq '{{#Page:CreateWash/#Control:FCPlateCode/#Value}}' and PlateNum eq '{{#Page:CreateWash/#Control:FCPlateNum/#Value}}' and MobileNum eq '{{#Page:CreateWash/#Control:FCMobile/#Value}}' and Site eq '{{#Page:CreateWash/#Control:FCSite/#Value}}'"},"Properties":["Site","PlateNum","PlateCode","MobileNum","CreatedOn","Model","Manufacture","FirstName"]}
+
+/***/ }),
+
+/***/ "./build.definitions/carcarenew/Actions/SaveValidation.action":
+/*!********************************************************************!*\
+  !*** ./build.definitions/carcarenew/Actions/SaveValidation.action ***!
+  \********************************************************************/
+/***/ ((module) => {
+
+module.exports = {"_Type":"Action.Type.Message","ActionResult":{"_Name":"SaveValidation"},"Message":"Please fill the details","OKCaption":"Ok"}
 
 /***/ }),
 
