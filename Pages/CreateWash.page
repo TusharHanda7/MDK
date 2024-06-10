@@ -22,9 +22,16 @@
 							"_Name": "FCSite",
 							"IsVisible": true,
 							"Separator": true,
+							"validationProperties": {
+								"ValidationMessageColor": "#f26363",
+								"SeparatorBackgroundColor": "#ff9393",
+								"ValidationViewBackgroundColor": "#f48989",
+								"ValidationViewIsHidden": true
+							},
 							"Caption": "Site",
 							"PlaceHolder": "Site",
 							"KeyboardType": "Default",
+							"AlternateInput": "None",
 							"Enabled": true,
 							"IsEditable": true
 						},
@@ -114,7 +121,7 @@
 				"Position": "Left",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/carcarenew/Actions/ODataCreateHeader.action"
+				"OnPress": "/carcarenew/Rules/SaveValidation.js"
 			},
 			{
 				"_Name": "ActionBarItem1",
